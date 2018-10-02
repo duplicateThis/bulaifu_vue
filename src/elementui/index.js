@@ -13,6 +13,7 @@ import {
     Submenu,
     MenuItem,
     MenuItemGroup,
+    Input
 
     // Button,
     // Container,
@@ -44,6 +45,7 @@ Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)
 Vue.use(MenuItemGroup)
+Vue.use(Input)
 
 
 // Vue.use(Button)

@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <el-row class="navigation-bar">
+        <el-row class="navigation-bar" style="position: fixed;">
             <el-col :xl="3" :lg="3" :md="3" :sm="3" :xs="1"><br></el-col>
             <el-col class="navigation-bar-logo" :xl="9" :lg="9" :md="9" :sm="9" :xs="11">
                 <router-link to='/home'>LOGO</router-link>
@@ -8,9 +8,9 @@
             <el-col :xl="9" :lg="9" :md="9" :sm="9" :xs="11">
                 <el-row class="navigation-bar-tag hidden-xs-only">
                     <div>
-                        <span class="dropdown-menu-title" @mouseover="dropdownMenuShow" @mouseout="dropdownMenuHide">音乐<i class="el-icon-arrow-down el-icon--right"></i></span>
+                        <span class="dropdown-menu-title" @mouseover="dropdownMenuShow" @mouseout="dropdownMenuHide">工具<i class="el-icon-arrow-down el-icon--right"></i></span>
                         <ul class="dropdown-menu" @mouseover="dropdownMenuShow" @mouseout="dropdownMenuHide" v-show="dropdownActive">
-                            <li>钢琴原创</li>
+                            <li><router-link to='/tools/barcode'>条形码</router-link></li>
                             <li>钢琴原创</li>
                             <li>钢琴原创</li>
                         </ul>
@@ -23,7 +23,7 @@
             </el-col>
             <el-col :xl="3" :lg="3" :md="3" :sm="3" :xs="1"><br></el-col>
         </el-row>
-        <el-row class="message-bar">
+        <el-row class="message-bar" style="position: fixed;">
             <el-col :xl="3" :lg="3" :md="3" :sm="3" :xs="1"><br></el-col>
             <el-col class="message-bar-item1" :xl="9" :lg="9" :md="9" :sm="9" :xs="11">我是消息条</el-col>
             <el-col class="message-bar-item2" :xl="9" :lg="9" :md="9" :sm="9" :xs="11">我是分享条</el-col>
